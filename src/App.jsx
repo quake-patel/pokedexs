@@ -9,13 +9,13 @@ import GenerationList from "./GenerationList";
 const App = () => {
   return (
     <Provider store={Store}>
-      <Router>
+      <Router basename='/pokedexs'>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/pokemon" element={<Pokemon />} />
-            <Route path="/generation/:id" element={<GenerationList />} />
-            <Route path="/pokemon/:name" element={<Detail />} />
+            <Route path='/' element={<Home />} />
+            <Route path='/pokemon' element={<Pokemon />} />
+            <Route path='/generation/:id' element={<GenerationList />} />
+            <Route path='/pokemon/:name' element={<Detail />} />
           </Routes>
         </div>
       </Router>
